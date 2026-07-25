@@ -18,4 +18,6 @@ variable "domain_name" {
   default = "devops550.online"
 }
 
-
+variable "rule_priority" {
+  #type = string
+}
