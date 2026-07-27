@@ -198,7 +198,7 @@ resource "terraform_data" "main_delete" {
   triggers_replace = [
     aws_instance.main.id
   ]
-  depends_on = [aws_autoscaling_policy.catalogue]
+  depends_on = [aws_autoscaling_policy.main]
 
   # execuites where terraform is running
   provisioner "local-exec" {
